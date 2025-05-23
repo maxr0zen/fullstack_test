@@ -1,0 +1,112 @@
+[
+    {
+        "model": "shop.product",
+        "pk": 1,
+        "fields": {
+            "name": "iPhone 15 Pro",
+            "description": "Новейший смартфон от Apple с процессором A17 Pro, титановым корпусом и улучшенной камерой. Поддержка USB-C и быстрой зарядки.",
+            "price": "999.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 2,
+        "fields": {
+            "name": "Samsung Galaxy S24 Ultra",
+            "description": "Флагманский смартфон Samsung с процессором Snapdragon 8 Gen 3, S Pen и революционной камерой с ИИ-функциями.",
+            "price": "1199.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 3,
+        "fields": {
+            "name": "MacBook Pro 16\" M3 Max",
+            "description": "Мощный ноутбук с процессором M3 Max, дисплеем Liquid Retina XDR и до 96 ГБ оперативной памяти. Идеален для профессионалов.",
+            "price": "3499.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 4,
+        "fields": {
+            "name": "Sony WH-1000XM5",
+            "description": "Беспроводные наушники с шумоподавлением нового поколения, премиальным звуком и продвинутыми функциями ИИ.",
+            "price": "399.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 5,
+        "fields": {
+            "name": "DJI Mini 4 Pro",
+            "description": "Компактный дрон с камерой 4K, продвинутыми функциями съемки и временем полета до 34 минут. Идеален для путешествий.",
+            "price": "799.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 6,
+        "fields": {
+            "name": "iPad Pro 12.9\" M2",
+            "description": "Мощный планшет с процессором M2, дисплеем Liquid Retina XDR и поддержкой Apple Pencil 2. Прекрасный выбор для творческих профессионалов.",
+            "price": "1099.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 7,
+        "fields": {
+            "name": "PlayStation 5",
+            "description": "Новейшая игровая консоль от Sony с поддержкой 4K, трассировкой лучей и быстрой загрузкой игр благодаря SSD.",
+            "price": "499.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 8,
+        "fields": {
+            "name": "Nintendo Switch OLED",
+            "description": "Портативная консоль с улучшенным OLED-экраном, улучшенным звуком и увеличенной внутренней памятью.",
+            "price": "349.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 9,
+        "fields": {
+            "name": "Apple Watch Series 9",
+            "description": "Умные часы с новым процессором S9, улучшенными датчиками здоровья и поддержкой жестов Double Tap.",
+            "price": "399.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 10,
+        "fields": {
+            "name": "Samsung 65\" QLED 4K Smart TV",
+            "description": "Телевизор с квантовыми точками, поддержкой HDR10+, встроенным ИИ и премиальным звуком.",
+            "price": "1499.99",
+            "created_at": "2024-03-15T10:00:00Z",
+            "updated_at": "2024-03-15T10:00:00Z"
+        }
+    }
+] 

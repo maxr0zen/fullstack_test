@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  backend-dev:
+    container_name: back-app-dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - .:/app
+      - static_volume:/app/staticfiles
+      - media_volume:/app/media
+      - sqlite_data:/app/data
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+      - SECRET_KEY=your-secret-key-here
+      - DATABASE_URL=sqlite:///data/db.sqlite3
+    networks:
+      - app-network
+
+  backend-prod:
+    container_name: back-app-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - static_volume:/app/staticfiles
+      - media_volume:/app/media
+      - sqlite_data:/app/data
+    ports:
+      - "80:80"
+    environment:
+      - DEBUG=0
+      - SECRET_KEY=your-secret-key-here
+      - DATABASE_URL=sqlite:///data/db.sqlite3
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  static_volume:
+  media_volume:
+  sqlite_data: 

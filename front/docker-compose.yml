@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  frontend-dev:
+    container_name: front-app-dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000/api/Ё
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+    volumes:
+      - .:/app
+      - /app/node_modules
+    restart: unless-stopped
+    networks:
+      - front-network
+
+  frontend-prod:
+    container_name: front-app-prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      - REACT_APP_API_URL=http://localhost:8000/api/
+    restart: unless-stopped
+    networks:
+      - front-network
+    depends_on:
+      - frontend-dev
+
+networks:
+  front-network:
+    driver: bridge
+
+volumes:
+  static_volume:
+  media_volume:
+  node_modules: 
